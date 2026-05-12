@@ -1,4 +1,5 @@
-# Kotlin Inventory Engine: From Java to Kotlin 
+# Kotlin Inventory Engine: From Java to Kotlin
+
 This project is the evolution of my first Java Inventory Engine. After graduating from CodeFactory Vienna with a perfect score (360/360), I challenged myself to translate the warehouse management logic into Kotlin.
 
 **Troubleshooting & Technical Journey**
@@ -21,5 +22,10 @@ Null Safety: Using safe calls and Elvis operators to prevent system crashes duri
 Compilation:
 /Users/marialaurafagioli/Downloads/kotlinc/bin/kotlinc Inventory.kt -include-runtime -d inventory.jar
 
-Execution:
+**Execution:**
 java -jar inventory.jar
+
+### Key Features Implemented:
+
+- **Case-insensitive Search**: Users can look up products without worrying about uppercase/lowercase mismatches.
+- **Resilient Error Handling**: Implemented Kotlin's safe calls (`?.`) to ensure the system never crashes when a product is missing.
